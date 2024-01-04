@@ -12,7 +12,7 @@
 
     
 </head>
-<body >
+<body class="font-sans  h-screen">
     <div class="flex justify-end items-center space-x-6 px-8 ">
        
         <a  href="https://www.facebook.com/" class="mr-6 text-neutral-600 dark:text-neutral-200">
@@ -37,26 +37,58 @@
           </a>
 
     </div>
-    <!-- navbar -->
-    <nav class="p-0.05 bg-gray-800 shadow md:flex md:items-center md:justify-between ">
-    <div class="flex justify-end items-center ">
-        <span>
-            <img class="h-10 inline" src="images\logo.jpg">
-        </span>
-
-        <div class="absolute right-0 flex space-x-5">
-            <a href="" class="p-5 text-white font-sans font-bold">ABOUT US</a>
-            <a href="" class="p-5 text-white font-sans font-bold">OUR PRODUCTS</a>
-            <a href="" class="p-5 text-white font-sans font-bold">PRICE</a>
-            <a href="" class="p-5 text-white font-sans font-bold">ACCESSORIES</a>
+    
+      <div class=" flex justify-between bg-gray-800 ">
+        <div>
+          <img class="h-10 w-16 cursor-pointer " src="images\logo.jpg">
         </div>
+      
+     
+        <nav class="  flex justify-end items-center bg-gray-800 shadow">
+         
+          <div class="nav-links duration-500 md:static absolute  md:min-h-fit min-h-[60vh] right-0 top-[-100%] md:w-auto  w-full flex items-center px-5 font-bold font-sans text-white  bg-gray-800 shadow">
+              <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8  ">
+                  <li>
+                      <a class="hover:text-gray-500" href="index.html">HOME</a>
+                  </li>
+                  <li>
+                      <a class="hover:text-gray-500" href="aboutus.html">ABOUT US</a>
+                  </li>
+                  <li>
+                      <a class="hover:text-gray-500" href="#">OUR PRODUCTS</a>
+                  </li>
+                  <li>
+                      <a class="hover:text-gray-500" href="#">PRICE</a>
+                  </li>
+                  <li>
+                      <a class="hover:text-gray-500" href="#">ACCESSORIES</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="flex items-center gap-6">
+              
+              <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden "></ion-icon>
+          </div>
+        </nav>
+      </div>
 
-    </div>
-</nav>
+    
+ 
 
 
 
-<!-- slider -->
+  <script>
+    const navLinks = document.querySelector('.nav-links')
+    function onToggleMenu(e){
+        e.name = e.name === 'menu' ? 'close' : 'menu'
+        navLinks.classList.toggle('top-[9%]')
+    }
+</script>
+    
+    
+    
+
+<!-------------- Slider ---------------->
 <style>
   .carousel {
   width: 100%;
@@ -239,11 +271,11 @@
 
 
 <!-- Footer -->
-<footer class="bg-gray-950 text-center text-white lg:text-left font-sans">
+<footer class="bg-gray-950 text-center text-white lg:text-left font-sans ">
 
 
 <!-- Main container div: holds the entire content of the footer, including four sections (Tailwind Elements, Products, Useful links, and Contact), with responsive styling and appropriate padding/margins. -->
-<div class="  mx-6 py-10 text-center md:text-left font-sans text-lg">
+<div class="  mx-6 py-10 text-center md:text-left font-sans text-lg ">
   <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-5">
     <!-- Tailwind Elements section -->
     <div class="ml-16">
@@ -255,19 +287,19 @@
     <div class="">
      
       <p class="mb-4">
-        <a href="#" class="text-neutral-600 dark:text-neutral-200 "
+        <a href="#" class="text-neutral-600 dark:text-neutral-200 hover:text-gray-500 "
           >About Us</a>
       </p>
       <p class="mb-4">
-        <a href=" ">A few Words</a>
+        <a href=" " class="text-neutral-600 dark:text-neutral-200 hover:text-gray-500 ">A few Words</a>
       </p>
       <p class="mb-4">
-        <a href="#!" class="text-neutral-600 dark:text-neutral-200"
+        <a href="#!" class="text-neutral-600 dark:text-neutral-200 hover:text-gray-500"
           >Our History</a
         >
       </p>
       <p class="mb-4">
-        <a href="#!" class="text-neutral-600 dark:text-neutral-200"
+        <a href="#!" class="text-neutral-600 dark:text-neutral-200 hover:text-gray-500"
           >Work With Us</a
         >
       </p>
@@ -275,51 +307,51 @@
     <!-- Useful links section -->
     <div class="">
       <p class="mb-4">
-        <a href="#!" class="text-neutral-600 dark:text-neutral-200"
+        <a href="#!" class="text-neutral-600 dark:text-neutral-200 hover:text-gray-500"
           >Genuine Parts</a
         >
       </p>
       <p class="mb-4">
-        <a href="#!" class="text-neutral-600 dark:text-neutral-200"
+        <a href="#!" class="text-neutral-600 dark:text-neutral-200 hover:text-gray-500"
           >Accessories</a
         >
       </p>
       <p class="mb-4">
-        <a href="" class="text-neutral-600 dark:text-neutral-200"
+        <a href="" class="text-neutral-600 dark:text-neutral-200 hover:text-gray-500"
           >Ebook</a
         >
       </p>
       <p class="mb-4">
-        <a href="#!" class="text-neutral-600 dark:text-neutral-200"
+        <a href="#!" class="text-neutral-600 dark:text-neutral-200 hover:text-gray-500"
           >Help</a
         >
       </p>
     </div>
     <div>
       <p class="mb-4">
-        <a href="#!" class="text-neutral-600 dark:text-neutral-200">Locate a Dealer</a>
+        <a href="#!" class="text-neutral-600 dark:text-neutral-200 hover:text-gray-500">Locate a Dealer</a>
       </p>
 
       <p class="mb-4">
-        <a href="#!" class="text-neutral-600 dark:text-neutral-200">Compare Vehicle</a>
+        <a href="#!" class="text-neutral-600 dark:text-neutral-200 hover:text-gray-500">Compare Vehicle</a>
       </p>
 
       <p class="mb-4">
-        <a href="#!" class="text-neutral-600 dark:text-neutral-200">Referral</a>
+        <a href="#!" class="text-neutral-600 dark:text-neutral-200 hover:text-gray-500">Referral</a>
       </p>
       <p class="mb-4">
-        <a href="#!" class="text-neutral-600 dark:text-neutral-200">Upload Photo</a>
+        <a href="#!" class="text-neutral-600 dark:text-neutral-200 hover:text-gray-500">Upload Photo</a>
       </p>
     </div>
     <!-- Contact section -->
     <div>
       
-      <a href="#" class="text-neutral-600 dark:text-neutral-200"
+      <a href="#" class="text-neutral-600 dark:text-neutral-200 hover:text-gray-500"
           ><h6
-          class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+          class="mb-4 flex justify-center font-semibold uppercase md:justify-start hover:text-gray-500">
           Contact Us
         </h6></a>
-      <p class="mb-4 flex items-center justify-center md:justify-start">
+      <p class="mb-4 flex items-center justify-center md:justify-start hover:text-gray-500">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -332,7 +364,7 @@
         </svg>
         Gaindakot-5, Nawalpur, Nepal
       </p>
-      <p class="mb-4 flex items-center justify-center md:justify-start">
+      <p class="mb-4 flex items-center justify-center md:justify-start hover:text-gray-500">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -345,7 +377,7 @@
         </svg>
         oes500@gmail.com
       </p>
-      <p class="mb-4 flex items-center justify-center md:justify-start">
+      <p class="mb-4 flex items-center justify-center md:justify-start hover:text-gray-500">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -358,7 +390,7 @@
         </svg>
         +977 9865656565
       </p>
-      <p class="flex items-center justify-center md:justify-start">
+      <p class="flex items-center justify-center md:justify-start hover:text-gray-500">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
