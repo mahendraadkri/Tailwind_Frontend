@@ -13,6 +13,7 @@
     
 </head>
 <body class="font-sans  h-screen">
+  
     <div class="flex justify-end items-center space-x-6 px-8 ">
        
         <a  href="https://www.facebook.com/" class="mr-6 text-neutral-600 dark:text-neutral-200">
@@ -37,13 +38,15 @@
           </a>
 
     </div>
+  
     
       <div class=" flex justify-between bg-gray-800 ">
         <div>
           <img class="h-10 w-16 cursor-pointer " src="images\logo.jpg">
         </div>
       
-     
+        <!------------ Nav_Bar ------------>
+
         <nav class="  flex justify-end items-center bg-gray-800 shadow">
          
           <div class="nav-links duration-500 md:static absolute  md:min-h-fit min-h-[60vh] right-0 top-[-100%] md:w-auto  w-full flex items-center px-5 font-bold font-sans text-white  bg-gray-800 shadow">
@@ -71,19 +74,13 @@
           </div>
         </nav>
       </div>
-
-    
- 
-
-
-
-  <script>
-    const navLinks = document.querySelector('.nav-links')
-    function onToggleMenu(e){
-        e.name = e.name === 'menu' ? 'close' : 'menu'
-        navLinks.classList.toggle('top-[9%]')
-    }
-</script>
+    <script>
+      const navLinks = document.querySelector('.nav-links')
+      function onToggleMenu(e){
+          e.name = e.name === 'menu' ? 'close' : 'menu'
+          navLinks.classList.toggle('top-[9%]')
+        }
+    </script>
     
     
     
@@ -254,14 +251,17 @@
 
 
 
+
+
+
 <div class="flex space-x-8">
 
-  <div class="flex-1 max-w-md bg-white p-4 shadow-md">
-      <h2 class="text-xl font-sans mb-4 underline">Why Us ?</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro iste ad expedita non rem dignissimos in, odio unde. Asperiores sint nisi quia adipisci impedit eum. Corrupti laudantium impedit voluptatem numquam!</p>
+  <div class="flex-1 max-w-md bg-white p-4 ml-10 mr-8">
+      <h2 class="text-7xl font-sans mb-4 text-blue-950 " style="border-bottom: 4px solid currentColor;">Why Us ?</h2><br>
+      <p class="text-xl text-gray-500">With over three decades of experience in Nepal's automotive industry, Suzuki proudly holds the title of being The Number 1 selling 4-Wheeler brand in the country. Few brands can match the level of trust and confidence that Nepali customers have in Suzuki. Suzuki's extensive lineup of SUVs and compact cars caters to the diverse needs of Nepalese customers, making it the go-to choice. Suzuki, a renowned Japanese car brand with a global reputation for its technical innovations, has consistently delivered award-winning designs and cutting-edge engine technology. The remarkable Suzuki lineup in Nepal is further enhanced with the introduction of the iconic "Jimny" and the modern urban SUV, "Fronx," complementing the existing Grand Vitara and Brezza models. This solidifies Suzuki's position as a PROMINENT SUV BRAND in Nepal.</p>
   </div>
 
-  <div class="flex-1 max-w-md bg-white p-4 shadow-md">
+  <div class="flex-1 max-w-md bg-white p-4 ">
       <h2 class="text-xl font-semibold mb-4">Second Div</h2>
       
   </div>
