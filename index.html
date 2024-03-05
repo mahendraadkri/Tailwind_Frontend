@@ -57,19 +57,19 @@
           <div class="nav-links duration-500 md:static absolute  md:min-h-fit min-h-[60vh] right-0 top-[-100%] md:w-auto  w-full flex items-center px-5 font-bold font-sans text-white  bg-gray-800 shadow">
               <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8  ">
                   <li>
-                      <a class="hover:text-gray-500" href="index.html">HOME</a>
+                      <a class="hover:text-gray-500 text-lg" href="index.html">HOME</a>
                   </li>
                   <li>
-                      <a class="hover:text-gray-500" href="aboutus.html">ABOUT US</a>
+                      <a class="hover:text-gray-500 text-lg" href="aboutus.html">ABOUT US</a>
                   </li>
                   <li>
-                      <a class="hover:text-gray-500" href="#">OUR PRODUCTS</a>
+                      <a class="hover:text-gray-500 text-lg" href="genuineparts.html">GENUINE PARTS</a>
                   </li>
                   <li>
-                    <a class="hover:text-gray-500" href="appointment.html">APPOINTMENT</a>
+                    <a class="hover:text-gray-500 text-lg" href="appointment.html">APPOINTMENT</a>
                 </li>
                   <li>
-                      <a class="hover:text-gray-500" href="#">ACCESSORIES</a>
+                      <a class="hover:text-gray-500 text-lg" href="#">ACCESSORIES</a>
                   </li>
               </ul>
           </div>
@@ -99,6 +99,7 @@
   }
   .carousel-item {
   display: none;
+            position: relative;
   }
   .carousel-item:first-child {
   display: block;
@@ -108,8 +109,17 @@
   height: auto;
   }
   .carousel-indicators {
-  text-align: center;
-  margin-top: 10px;
+  /* text-align: center;
+  margin-top: 10px; */
+  position: absolute;
+    left: 0;
+    right: 0;
+  }
+  .carousel-indicators ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
   .carousel-indicators li {
   display: inline-block;
@@ -146,6 +156,7 @@
 <div class="carousel">
   <div class="carousel-item">
     <img src="images/slider1.jpg" alt="Image 1" style="height:600px; object-fit: cover">
+    
 </div>
 
 <div class="carousel-item">
@@ -169,16 +180,16 @@
   <div class="carousel-item">
     <img src="images/slider3.jpg" alt="Image 3" style="height:600px; object-fit: cover">
 </div>
-  
-  <div class="carousel-indicators">
-  <ul>
-  <li class="active"></li>
-  <li></li>
- <li></li>
-  </ul>
+
+  <div class="carousel-indicators absolute inset-x-0 bottom-0 text-center mb-2">
+    <ul class="inline-block">
+      <li class="active inline-block mx-1"></li>
+      <li class="inline-block mx-1"></li>
+      <li class="inline-block mx-1"></li>
+    </ul>
   </div>
   
- </div>
+</div>
  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
@@ -272,18 +283,6 @@
   </div>
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -56,13 +56,13 @@
                   <a class="hover:text-gray-500 text-lg" href="index.html">HOME</a>
               </li>
               <li>
-                  <a class="hover:text-gray-500 text-lg" href="aboutus.html ">ABOUT US</a>
+                  <a class="hover:text-gray-500 text-lg" href="aboutus.html">ABOUT US</a>
               </li>
               <li>
-                <a class="hover:text-gray-500 text-lg" href="genuineparts.html ">GENUINE PARTS</a>
+                <a class="hover:text-gray-500 text-lg" href="genuineparts.html">GENUINE PARTS</a>
               </li>
               <li>
-                  <a class="hover:text-gray-500 text-lg" href="appointment.html ">APPOINTMENT</a>
+                  <a class="hover:text-gray-500 text-lg" href="appointment.html">APPOINTMENT</a>
               </li>
               <li>
                   <a class="hover:text-gray-500 text-lg" href="#">ACCESSORIES</a>
@@ -75,39 +75,17 @@
       </div>
     </nav>
   </div>
+            <script>
+                const navLinks = document.querySelector('.nav-links')
+                function onToggleMenu(e){
+                e.name = e.name === 'menu' ? 'close' : 'menu'
+                navLinks.classList.toggle('top-[9%]')
+                }
+            </script>
+    
 
-<script>
-const navLinks = document.querySelector('.nav-links')
-function onToggleMenu(e){
-    e.name = e.name === 'menu' ? 'close' : 'menu'
-    navLinks.classList.toggle('top-[9%]')
-}
-</script>
 
-  <div class="max-w-md mx-auto bg-white p-8 rounded shadow-md border-4 border-blue-900 mt-4 mb-4">
-    <h2 class="text-2xl font-bold mb-6">Book an Appointment</h2>
-    <form action="#" method="POST">
-        <div class="mb-4">
-            <label for="date" class="block text-gray-700 font-bold mb-2">Select Date:</label>
-            <input type="date" id="date" name="date" class="form-input w-full">
-        </div>
-        <div class="mb-4">
-            <label for="email" class="block text-gray-700 font-bold mb-2">Email Address:</label>
-            <input type="email" id="email" name="email" class="form-input w-full" placeholder="example@example.com">
-        </div>
-        <div class="mb-4">
-            <label for="time" class="block text-gray-700 font-bold mb-2">Select Time:</label>
-            <select id="time" name="time" class="form-select w-full">
-                <option value="9:00 AM">9:00 AM</option>
-                <option value="10:00 AM">10:00 AM</option>
-                <option value="11:00 AM">11:00 AM</option>
-            </select>
-        </div>
-        <button type="submit" class="bg-blue-900 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            Book Appointment
-        </button>
-    </form>
-</div>
+            
     
         <!-- Footer -->
         <footer class="bg-gray-950 text-center text-white lg:text-left font-sans ">
